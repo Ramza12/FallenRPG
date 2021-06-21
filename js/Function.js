@@ -54,7 +54,7 @@ function Rebirth() {
 level=1
 maxhealth=20
 health=maxhealth
-attack= Math.floor(Math.floor(attack*2)*40)/40
+attack= Math.floor(Math.ceil(attack*2)/4)
 if (attack<=0) {
 attack=1
 }
