@@ -1,0 +1,26 @@
+#main {
+color: red;
+}
+
+button {
+height: 40px;
+width: 70px;
+}
+
+.player {
+float: left;
+width: 80%;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.enemy {
+float: right;
+width: 20%;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+table, th, tr, td {
+border: 1px solid black;
+text-align: center;
+margin: 15px 15px 15px 15px
+}

@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>  Clicker Test  </title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body onload="SetUp()">
+  <h2 id="main">Fallen RPG!</h2>
+
+  <div class="player">
+  <p> Your attack power is: <span id="attack">0</span> </p>
+  <p> Your shadow power (auto attack power) is: <span id="shadow">0</span> </p>
+
+  <table>
+  <th>Action</th>
+  <th>Description</th>
+  <tr>
+  <td><button onclick="Train()"> Increase Power</button></td>
+  <td>Click to increase your attack power</td>
+  </tr>
+  <tr>
+  <td><button onclick="Main()"> Attack Opponent </button></td>
+  <td>Click this to attack your opponent</td>
+  </tr>
+  <tr>
+  <td><button id="rebirth" onclick="Rebirth()">Rebirth</button></td>
+  <td>Start from beginning, lose half your attack, <br> but keep your shadow power</td>
+  </tr>
+  <tr>
+  <td><button onclick="Save()">Save Game</button></td>
+  <td>Save your game into cache</td>
+  </tr>
+  <tr>
+  <td><button onclick="Load()">Load Game</button></td>
+  <td>Load your game from cache</td>
+  </tr>
+  </table>
+  </div>
+
+  <div class="enemy">
+  <p> Opponent Level: <span id="enemylv"> 1 </span>
+  <p> Your opponent's HP is: <span id="enemyhp">20</span> </p>
+  <progress id="hp" value="0.25"></progress><br><br>
+  </div>
+
+
+  <script src="js/Function.js"></script>
+  </body>
+
+</html>
