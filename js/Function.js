@@ -79,6 +79,11 @@ Main()
 
 }, 100); // 100ms = 0.1 second
 
+setInterval(function() {
+Save()
+
+}, 1000); // 1000ms = 1 second
+
 function Save() {
 var SaveFile = {
 maxhealth: maxhealth,
@@ -110,4 +115,11 @@ hpbar = health/maxhealth
 hpvalue.value = hpbar
 
 }
+
+function Initialize() {
+SetUp()
+Load()
+}
+
+
 
